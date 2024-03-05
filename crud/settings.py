@@ -44,10 +44,10 @@ INSTALLED_APPS = [
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
+    "corsheaders",
     "django.contrib.staticfiles",
     "projects",
     "rest_framework",
-    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -141,5 +141,5 @@ if not DEBUG:
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:4200',
+    "http://localhost:4200",
 ]
